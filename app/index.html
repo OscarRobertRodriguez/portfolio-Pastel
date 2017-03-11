@@ -13,9 +13,38 @@
   </head>
   
   <body>
+
+          <input id="hamburger-toggle" type="checkbox" name="checkbox">
+            <nav class="nav">
+              <label for="hamburger-toggle" class="hamburger-icon">
+                <i class="fa fa-bars"></i>
+              </label>
+              <ul class="main-nav" role="navigation">
+                <li><a class="main-nav__link" href="#about">about</a></li>
+                <li><a class="main-nav__link" href="#projects">projects</a></li>
+                <li><a class="main-nav__link" href="#skills">skills</a></li>
+                <li><a class="main-nav__link" href="#contact">contact</a></li>
+                <li><a class="main-nav__link" href="#footer">card</a></li>
+              </ul>
+            </nav>
+
+
+
+
+
+
     <!-- header -->
-     <header id="header" class="site-header u-full-width">
+     <header id="header" class=" container site-header u-full-width ">
         
+        
+            <h3 class="author-name six columns">Oscar R.</h3>
+             
+           <form class="search-container six columns">
+            <button>
+              <i class="fa fa-search"></i>
+            </button>
+            <input type="search" placeholder="Search">
+           </form>
      </header>
      <!-- /header -->
     
@@ -26,8 +55,12 @@
 <!-- about -->
     <section id="about" class="about  u-full-width">
         <div class="container">
-          
-        </div>
+          <div class="row">
+            <h2>Oscar Rodriguez</h2>
+             <p>Frontend Developer</p>
+
+             <h1>I develop websites.</h1>
+          </div>
     </section>
 
 
@@ -37,17 +70,40 @@
 <!-- quote section -->
      <section id="quote" class="quote u-full-width">
         <div class="container">
-           hellow
+           <div class="row">
+              
+               <q class="quote__text">The only true wisdom is in knowing you know nothing</q>
+             
+             <h5 class="quote-author">Socrates</h5>
+           </div>
         </div>
      </section>
 
+
+
+
+         <section class="u-full-width u-max-width  back-forward__container">
+             <div class="container">
+             <div class="row">
+                <h2 class="project-heading">Projects</h2>
+                <a class="offset-by-two square  four columns back-button">
+                  <i class="fa fa-arrow-left"></i>
+                </a>
+                <a class="square  four columns  forward-button">
+                  <i class="fa fa-arrow-right"></i>
+                </a>
+                </div>
+             </div>
+         </section>
+
+
+
 <!-- Questionable layout choice project section  -->
      <section  id="projects" class="projects u-full-width">
-         <section class=" row u-full-width u-max-width">
-             
-         </section>
+
          <section class="row  u-full-width carousel">
-             
+             <!-- carousel goes heree -->
+             helool
          </section>
      </section>
 
@@ -57,7 +113,7 @@
 <!-- skills heading -->
      <section class="skills-heading u-full-width">
        <div class="container">
-          
+          <h2>Skills</h2>
        </div>
      </section>
 
@@ -70,6 +126,9 @@
      </section>
 
 
+
+
+
      <section class="contact-heading u-full-width">
         <div class="container">
           
@@ -77,16 +136,22 @@
      </section>
 
 
-     <section class="cotact u-full-width">
+
+
+
+     <section id="contact" class="contact u-full-width">
        <div class="container">
-         
+         <h2>Contact Me</h2>
        </div>
      </section>
 
 
+
+
+
      <footer id="footer" class="site-footer u-full-width">
         <div class="container">
-          
+          <small>Copyright All Rights Reserved.</small>
         </div>
      </footer>
 

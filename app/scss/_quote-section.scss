@@ -1,0 +1,27 @@
+
+
+.quote {
+	color: #fff;
+	background: #565B6E;
+}
+
+.quote__text {
+	margin: 0;
+  font-size: 3.4rem;
+}
+
+
+
+.quote-author {
+  text-align: right;
+  font-size: 4rem;
+  letter-spacing: 1px;
+  padding-top: 20px;
+  margin: 0;
+
+  &:before {
+  	content: "-";
+  	padding:10px;
+  }
+
+}
