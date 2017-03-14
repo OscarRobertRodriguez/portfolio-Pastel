@@ -1,0 +1,353 @@
+
+
+.skills {
+	background: #EE9E83;
+	box-shadow: inset 0 10px 10px -5px rgba(0,0,0,.1);
+    padding-top: 0;
+    
+}
+
+
+
+
+//  pie cicles 
+//  
+
+.pie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.pie__heading {
+	position: absolute;
+	text-align:center;
+	top: 20px;
+	font-size: 2.5rem;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	bottom: 0;
+	text-shadow: 2px 1px 5px #000;
+}
+
+
+
+
+
+.c100 {
+	position: relative;
+     height: 260px;
+     width: 260px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,.2);
+    &:after {
+    position: absolute;
+    top: 50% ;
+    left: 50%;
+    margin: -100px ;
+    display: block;
+    content: " ";
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #EF9D80;
+    transition: all .2s ease-in;
+    box-shadow: 1px 5px 3px rgba(0,0,0,.3);
+    }
+
+}
+
+
+.c100 > span {
+	position: absolute;
+	z-index: 5;
+	color: #fff;
+    font-size: 5rem;
+    top: 35%;
+    left: 35%;
+}
+
+
+.slice .mask  .fill {
+	position: absolute;
+	width: 260px;
+	height: 260px;
+    top:0;
+	border-radius: 50%;
+	background: #009688;
+	transform: rotate(90deg);
+	clip: rect(0px, 160px, 130px, 0px);
+	backface-visibility: hidden;
+}
+
+
+.slice .mask {
+	position: absolute;
+	width: 260px;
+	height: 260px;
+    top:0;
+	border-radius: 50%;
+	background: #009688;
+	transform: rotate(0deg);
+	clip: rect(0px, 260px, 260px, 0px);
+	backface-visibility: hidden;
+}
+
+ .slice > .mask.left {
+ 	transform: rotate(-90deg);
+	clip: rect(0px, 130px, 130px, 0px);
+}
+
+ .slice > .mask.right {
+	transform: rotate(90deg);
+	clip: rect(0px, 260px, 130px, 0px);
+}
+
+
+ .slice > .mask.left.progress-back {
+    	transform: rotate(180deg);
+	clip: rect(0px, 0px, 0px, 0px);
+}
+
+  .slice > .mask.right.progress-back {
+    transform: rotate(90deg);
+	clip: rect(0px, 130px, 130px, 0px);
+}
+
+// .mask .left  {
+//  	transform: rotate(0deg);
+// 	clip: rect(0px, 180px, 260px, 0px);
+// }
+
+// .mask .right  {
+// 	transform: rotate(180deg);
+// 	clip: rect(0px, 160px, 160px, 0px);
+// }
+
+
+
+// graphs
+.graphs {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+
+.graph-container {
+  display: flex;
+  flex: 1 0 0;
+  padding: 20px;
+  padding-top: 20px;
+  flex-direction: column;
+
+}
+
+
+.graph {
+	display: flex;
+
+}
+
+
+// skill levels
+.skill-level {
+	margin: 0;
+	list-style-type: none;
+}
+
+
+.skill-level__item {
+	text-transform: uppercase;
+	color: #fff;
+	line-height: 2;
+	padding: 10px;
+}
+
+
+.graph-heading {
+	color: #fff;
+	text-transform: uppercase;
+	text-shadow: 1px 3px 5px #000;
+	letter-spacing: 1px;
+	text-align: left;
+}
+
+
+// graph bars section
+
+$expert-height: 100%;
+$proficient-height: 75%;
+$compentent-height: 50%;
+$learning-height: 25%;
+
+
+
+.graph-bars {
+ display: flex;
+ flex: 1 0 0;
+ justify-content: space-around;
+ align-items: flex-end;
+ border-bottom: 1px solid #fff;
+
+}
+
+
+.graph-bar {
+	width: 50px;
+	height: $expert-height;
+	background: #fff;
+	position: relative;
+	box-shadow: 3px 0px 2px rgba(0,0,0,.2);
+}
+
+
+
+[class*="bar-"]:after {
+	text-transform: capitalize;
+	position: absolute;
+	bottom: -75px;
+	left: 0;
+    transform: rotate(65deg);
+    font-size: 1.5rem;
+    display: inline-block;
+    white-space: nowrap;
+    color: #fff;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 3px rgba(0,0,0,.2);
+}
+
+
+[class*="bar-3"]:after {
+	position: absolute;
+	bottom: -40px;
+	left:10px;
+    transform: rotate(70deg);
+    display: inline-block;
+    white-space: nowrap;
+    width: 10px;
+}
+
+.bar-1-1 {
+
+	&:after {
+		content:"JavaScript";
+	}
+}
+
+.bar-1-2 {
+
+	&:after {
+		content: "HTML/CSS";
+	}
+}
+
+.bar-1-3 {
+	
+	&:after {
+		content: "ReactJs";
+	}
+}
+
+.bar-1-4 {
+	
+	&:after {
+		content: "pug";
+	}
+}
+
+.bar-1-5 {
+	
+	&:after {
+		content: "JQuery";
+	}
+}
+
+
+
+
+
+.bar-2-1 {
+
+	&:after {
+		content:"NodeJS";
+	}
+}
+
+.bar-2-2 {
+
+	&:after {
+		content: "GoLang";
+	}
+}
+
+.bar-2-3 {
+	
+	&:after {
+		content: "PostgresQl";
+	}
+}
+
+.bar-2-4 {
+	
+	&:after {
+		content: "AWS";
+	}
+}
+
+.bar-2-5 {
+	
+	&:after {
+		content: "Docker";
+	}
+}
+
+
+
+
+.bar-3-1 {
+
+	&:after {
+		content:"Written Communication";
+	}
+}
+
+.bar-3-2 {
+
+	&:after {
+		content: "Problem Solving";
+	}
+}
+
+.bar-3-3 {
+	
+	&:after {
+		content: "Project Management";
+	}
+}
+
+.bar-3-4 {
+	
+	&:after {
+		content: "Research";
+	}
+}
+
+.bar-3-5 {
+	
+	&:after {
+		content: "Public Speaking";
+	}
+}
+
+
+
+.phantom-container {
+  
+  height: 100px;
+}
+
