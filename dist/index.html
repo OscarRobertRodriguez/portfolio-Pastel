@@ -23,17 +23,17 @@
       </ul>
     </nav>
     <!-- header -->
-    <header id="header" class=" container site-header u-full-width ">
+    <header id="header" class=" site-header u-full-width ">
+      <h3 class="author-name">Oscar R.</h3>
       
-      
-      <h3 class="author-name six columns">Oscar R.</h3>
-      
-      <form class="search-container six columns">
-        <button>
-        <i class="fa fa-search"></i>
-        </button>
-        <input type="search" placeholder="Search">
-      </form>
+      <div class="container search-main__container">
+        <form class="search-container ">
+          <button>
+          <i class="fa fa-search"></i>
+          </button>
+          <input type="search" placeholder="Search">
+        </form>
+      </div>
     </header>
     <!-- /header -->
     
@@ -54,6 +54,11 @@
             </ul>
           </div>
         </div>
+        <div class="rows">
+          <div class="twelve columns">
+            <img src="images/alien_me.svg" class="alien">
+          </div>
+        </div>
       </section>
       <!-- quote section -->
       <section id="quote" class="quote u-full-width">
@@ -66,163 +71,230 @@
           </div>
         </div>
       </section>
-      <section class="u-full-width u-max-width  back-forward__container">
-        <div class="container">
-          <div class="row">
-            <h2 class="project-heading">Projects</h2>
-            <a class="offset-by-two square  four columns back-button">
-              <i class="fa fa-arrow-left"></i>
-            </a>
-            <a class="square  four columns  forward-button">
-              <i class="fa fa-arrow-right"></i>
-            </a>
-          </div>
-        </div>
+      <section class="u-full-width u-max-width  projects-heading__container">
+        <h2 class="project-heading">Projects</h2>
       </section>
       <!-- Questionable layout choice project section  -->
       <section  id="projects" class="projects u-full-width">
-        
-
-<div class="gallery items-3">
-  <div id="item-1" class="control-operator"></div>
-  <div id="item-2" class="control-operator"></div>
-  <div id="item-3" class="control-operator"></div>
-
-  <figure class="item">
-    <h1>1</h1>
-  </figure>
-
-  <figure class="item">
-    <h1>2</h1>
-  </figure>
-
-  <figure class="item">
-    <h1>3</h1>
-  </figure>
-
-  <div class="controls">
-    <a href="#item-1" class="control-button">•</a>
-    <a href="#item-2" class="control-button">•</a>
-    <a href="#item-3" class="control-button">•</a>
-  </div>
-</div>
-
-        
-        <div class="container carousel-main">
-          <input type="radio" id="carousel-1"  value="1" name="group-1">
-          <label class="label-control" for="carousel-1">1</label>
-
-          <input type="radio"  value="2" name="group-1" id="carousel-2">
-           <label class="label-control" for="carousel-2">2</label>
-
-          <input type="radio"  value="3" name="group-1" id="carousel-3">
-           <label class="label-control" for="carousel-3">3</label>
-
-          <input type="radio"  value="4" name="group-1" id="carousel-4">
-           <label class="label-control" for="carousel-4">4</label>
-
-          <input type="radio"  value="5" name="group-1" id="carousel-5">
-           <label class="label-control" for="carousel-5">5</label>
-
-          <input type="radio"  value="6" name="group-1" id="carousel-6">
-           <label class="label-control" for="carousel-6">6</label>
-
-          <input type="radio"  value="7" name="group-1" id="carousel-7">
-           <label class="label-control" for="carousel-7">7</label>
-
-          <input type="radio"  value="8" name="group-1" id="carousel-8">
-           <label class="label-control" for="carousel-8"></label>
-          
-          <div class="carousel-container ">
-            
-            <div class="carousel js-carousel">
-              <div>
+        <div class=" tab-carousel__container">
+          <!--radio buttons linked with labels -->
+          <input type="radio" class="vertical-tab__radio" id="tab-radio1" name="group-1">
+          <input type="radio" class="vertical-tab__radio" id="tab-radio2" name="group-1">
+          <input type="radio" class="vertical-tab__radio" id="tab-radio3" name="group-1">
+          <input type="radio" class="vertical-tab__radio" id="tab-radio4" name="group-1">
+          <input type="radio" class="vertical-tab__radio" id="tab-radio5" name="group-1">
+          <input type="radio" class="vertical-tab__radio" id="tab-radio6" name="group-1">
+          <input type="radio" class="vertical-tab__radio" id="tab-radio7" name="group-1">
+          <input type="radio" class="vertical-tab__radio" id="tab-radio8" name="group-1">
+          <!-- label container -->
+          <div class="vertical-tab__tabs">
+            <label class="vertical-tab__label" for="tab-radio1">Forms</label>
+            <label class="vertical-tab__label" for="tab-radio2">Calculator</label>
+            <label class="vertical-tab__label" for="tab-radio3">Buttons</label>
+            <label class="vertical-tab__label" for="tab-radio4">Business Card</label>
+            <label class="vertical-tab__label" for="tab-radio5">Shopping Cart</label>
+            <label class="vertical-tab__label" for="tab-radio6">Accordion</label>
+            <label class="vertical-tab__label" for="tab-radio7">UI Framework</label>
+            <label class="vertical-tab__label" for="tab-radio8">Image Gallery</label>
+          </div>
+          <div class="vertical-tab__content">
+            <!-- forms content -->
+            <div class="vertical-tab__content-project">
+              <div class="carousel carousel-1">
+                <!-- hidden radio buttons used for controls -->
+                <input type="radio" class="carousel-radio" name="carousel-radio__1" id="pane-1" checked />
+                <input type="radio" class="carousel-radio" name="carousel-radio__1" id="pane-2" />
+                <!-- carousel slide container 1 -->
                 <div class="carousel-slide">
-                  <h1 class="carousel-slide__heading">Forms</h1>
-                  <img class="offset-by-one ten columns carousel-slide__img" src="images/loginform.png" alt="">
-                  <p class="twelve columns carousel-slide__intro">made with html and css</p>
-                  <div class="carousel-link__wrapper">
-                    <a class="carousel-link offset-by-two  four columns" href="https://github.com/OscarRobertRodriguez/business-card"><i class="fa fa-code"></i></a>
-                    <a class="carousel-link four columns" href="https://github.com/OscarRobertRodriguez/business-card"><i class="fa fa-external-link"></i></a>
+                  <label for="pane-2" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>hello</h1>
                   </div>
+                  <label for="pane-2" class="next fa fa-arrow-right"></label>
+                </div>
+                <!-- carousel slide container 2 -->
+                <div class="carousel-slide">
+                  <label for="pane-1" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>welcome</h1>
+                    <div class="carousel-info">hello</div>
+                  </div>
+                  <label for="pane-1" class="next fa fa-arrow-right"></label>
                 </div>
               </div>
-              
-              <div>
+            </div>
+            <!-- calculator content -->
+            <div class="vertical-tab__content-project">
+              <div class="carousel carousel-2">
+                <!-- hidden radio buttons used for controls -->
+                <input type="radio" class="carousel-radio" name="carousel-radio__2" id="pane-3" checked />
+                <input type="radio" class="carousel-radio" name="carousel-radio__2" id="pane-4" />
+                <!-- carousel slide container 1 -->
                 <div class="carousel-slide">
-                  <h1 class="carousel-slide__heading">accordion</h1>
-                  <img class="offset-by-one ten columns carousel-slide__img" src="images/accordian.png" alt="">
-                  <p class="twelve columns carousel-slide__intro">made with html and css</p>
-                  <div class="carousel-link__wrapper">
-                    <a class="carousel-link offset-by-two  four columns" href="http://codepen.io/nopity/pen/oBXpXW"><i class="fa fa-code"></i></a>
-                    <a class="carousel-link four columns" href="http://codepen.io/nopity/pen/oBXpXW"><i class="fa fa-external-link"></i></a>
+                  <label for="pane-4" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>hello</h1>
                   </div>
+                  <label for="pane-4" class="next fa fa-arrow-right"></label>
+                </div>
+                <!-- carousel slide container 2 -->
+                <div class="carousel-slide">
+                  <label for="pane-3" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>welcome</h1>
+                    <div class="carousel-info"></div>
+                  </div>
+                  <label for="pane-3" class="next fa fa-arrow-right"></label>
                 </div>
               </div>
-              <div>
+            </div>
+            <!-- buttons content -->
+            <div class="vertical-tab__content-project">
+              <div class="carousel carousel-3">
+                <!-- hidden radio buttons used for controls -->
+                <input type="radio" class="carousel-radio" name="carousel-radio__3" id="pane-5" checked />
+                <input type="radio" class="carousel-radio" name="carousel-radio__3" id="pane-6" />
+                <!-- carousel slide container 1 -->
                 <div class="carousel-slide">
-                  <h1 class="carousel-slide__heading">Image Gallery</h1>
-                  <img class="offset-by-one ten columns carousel-slide__img" src="images/image gallery.png" alt="">
-                  <p class="twelve columns carousel-slide__intro">made with html and css</p>
-                  <div class="carousel-link__wrapper">
-                    <a class="carousel-link offset-by-two  four columns" href="https://github.com/OscarRobertRodriguez/bov-imageGallery"><i class="fa fa-code"></i></a>
-                    <a class="carousel-link four columns" href="https://oscarrobertrodriguez.github.io/bov-imageGallery/"><i class="fa fa-external-link"></i></a>
+                  <label for="pane-6" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>hello</h1>
                   </div>
+                  <label for="pane-6" class="next fa fa-arrow-right"></label>
+                </div>
+                <!-- carousel slide container 2 -->
+                <div class="carousel-slide">
+                  <label for="pane-5" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>welcome</h1>
+                    <div class="carousel-info"></div>
+                  </div>
+                  <label for="pane-5" class="next fa fa-arrow-right"></label>
                 </div>
               </div>
-              <div>
+            </div>
+            <!-- business card content -->
+            <div class="vertical-tab__content-project">
+              <div class="carousel carousel-4">
+                <!-- hidden radio buttons used for controls -->
+                <input type="radio" class="carousel-radio" name="carousel-radio__4" id="pane-7" checked />
+                <input type="radio" class="carousel-radio" name="carousel-radio__4" id="pane-8" />
+                <!-- carousel slide container 1 -->
                 <div class="carousel-slide">
-                  <h1 class="carousel-slide__heading">Shopping Cart</h1>
-                  <img class="offset-by-one ten columns carousel-slide__img" src="images/shoppingcart.png" alt="">
-                  <p class="twelve columns carousel-slide__intro">made with html and css</p>
-                  <div class="carousel-link__wrapper">
-                    <a class="carousel-link offset-by-two  four columns" href="https://github.com/OscarRobertRodriguez/product-listing"><i class="fa fa-code"></i></a>
-                    <a class="carousel-link four columns" href="https://oscarrobertrodriguez.github.io/product-listing/"><i class="fa fa-external-link"></i></a>
+                  <label for="pane-8" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>hello</h1>
                   </div>
+                  <label for="pane-8" class="next fa fa-arrow-right"></label>
+                </div>
+                <!-- carousel slide container 2 -->
+                <div class="carousel-slide">
+                  <label for="pane-7" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>welcome</h1>
+                    <div class="carousel-info"></div>
+                  </div>
+                  <label for="pane-7" class="next fa fa-arrow-right"></label>
                 </div>
               </div>
-              <div>
+            </div>
+            <!-- shopping cart content -->
+            <div class="vertical-tab__content-project">
+              <div class="carousel carousel-5">
+                <!-- hidden radio buttons used for controls -->
+                <input type="radio" class="carousel-radio" name="carousel-radio__5" id="pane-9" checked />
+                <input type="radio" class="carousel-radio" name="carousel-radio__5" id="pane-10" />
+                <!-- carousel slide container 1 -->
                 <div class="carousel-slide">
-                  <h1 class="carousel-slide__heading">Calculator</h1>
-                  <img class="offset-by-one ten columns carousel-slide__img" src="images/calculator.png" alt="">
-                  <p class="twelve columns carousel-slide__intro">made with html and css</p>
-                  <div class="carousel-link__wrapper">
-                    <a class="carousel-link offset-by-two  four columns" href="https://github.com/OscarRobertRodriguez/calculator"><i class="fa fa-code"></i></a>
-                    <a class="carousel-link four columns" href="https://oscarrobertrodriguez.github.io/calculator/"><i class="fa fa-external-link"></i></a>
+                  <label for="pane-10" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>hello</h1>
                   </div>
+                  <label for="pane-10" class="next fa fa-arrow-right"></label>
+                </div>
+                <!-- carousel slide container 2 -->
+                <div class="carousel-slide">
+                  <label for="pane-9" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>welcome</h1>
+                    
+                  </div>
+                  <label for="pane-9" class="next fa fa-arrow-right"></label>
                 </div>
               </div>
-              <div>
+            </div>
+            <!-- accordion content -->
+            <div class="vertical-tab__content-project">
+              <div class="carousel carousel-6">
+                <!-- hidden radio buttons used for controls -->
+                <input type="radio" class="carousel-radio" name="carousel-radio__6" id="pane-11" checked />
+                <input type="radio" class="carousel-radio" name="carousel-radio__6" id="pane-12" />
+                <!-- carousel slide container 1 -->
                 <div class="carousel-slide">
-                  <h1 class="carousel-slide__heading">Business Card</h1>
-                  <img class="offset-by-one ten columns carousel-slide__img" src="images/loginform.png" alt="">
-                  <p class="twelve columns carousel-slide__intro">made with html and css</p>
-                  <div class="carousel-link__wrapper">
-                    <a class="carousel-link offset-by-two  four columns" href="https://github.com/OscarRobertRodriguez/business-card"><i class="fa fa-code"></i></a>
-                    <a class="carousel-link four columns" href="https://github.com/OscarRobertRodriguez/business-card"><i class="fa fa-external-link"></i></a>
+                  <label for="pane-12" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>hello</h1>
                   </div>
+                  <label for="pane-12" class="next fa fa-arrow-right"></label>
+                </div>
+                <!-- carousel slide container 2 -->
+                <div class="carousel-slide">
+                  <label for="pane-11" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>welcome</h1>
+                    <div class="carousel-info"></div>
+                  </div>
+                  <label for="pane-11" class="next fa fa-arrow-right"></label>
                 </div>
               </div>
-              <div>
+            </div>
+            <!-- UI Framework content -->
+            <div class="vertical-tab__content-project">
+              <div class="carousel carousel-1">
+                <!-- hidden radio buttons used for controls -->
+                <input type="radio" class="carousel-radio" name="carousel-radio__7" id="pane-13" checked />
+                <input type="radio" class="carousel-radio" name="carousel-radio__7" id="pane-14" />
+                <!-- carousel slide container 1 -->
                 <div class="carousel-slide">
-                  <h1 class="carousel-slide__heading">UI Framework</h1>
-                  <img class="offset-by-one ten columns carousel-slide__img" src="images/loginform.png" alt="">
-                  <p class="twelve columns carousel-slide__intro">made with html and css</p>
-                  <div class="carousel-link__wrapper">
-                    <a class="carousel-link offset-by-two  four columns" href="https://github.com/OscarRobertRodriguez/business-card"><i class="fa fa-code"></i></a>
-                    <a class="carousel-link four columns" href="https://github.com/OscarRobertRodriguez/business-card"><i class="fa fa-external-link"></i></a>
+                  <label for="pane-14" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>hello</h1>
                   </div>
+                  <label for="pane-14" class="next fa fa-arrow-right"></label>
+                </div>
+                <!-- carousel slide container 2 -->
+                <div class="carousel-slide">
+                  <label for="pane-13" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>welcome</h1>
+                    <div class="carousel-info"></div>
+                  </div>
+                  <label for="pane-13" class="next fa fa-arrow-right"></label>
                 </div>
               </div>
-              <div>
+            </div>
+            <!-- Image Gallery content -->
+            <div class="vertical-tab__content-project">
+              <div class="carousel carousel-1">
+                <!-- hidden radio buttons used for controls -->
+                <input type="radio" class="carousel-radio" name="carousel-radio__8" id="pane-15" checked />
+                <input type="radio" class="carousel-radio" name="carousel-radio__8" id="pane-16" />
+                <!-- carousel slide container 1 -->
                 <div class="carousel-slide">
-                  <h1 class="carousel-slide__heading">Profile Card</h1>
-                  <img class="offset-by-one ten columns carousel-slide__img" src="images/loginform.png" alt="">
-                  <p class="twelve columns carousel-slide__intro">made with html and css</p>
-                  <div class="carousel-link__wrapper">
-                    <a class="carousel-link offset-by-two  four columns" href="https://github.com/OscarRobertRodriguez/profile-card"><i class="fa fa-code"></i></a>
-                    <a class="carousel-link four columns" href="https://oscarrobertrodriguez.github.io/profile-card/"><i class="fa fa-external-link"></i></a>
+                  <label for="pane-16" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>hello</h1>
                   </div>
+                  <label for="pane-16" class="next fa fa-arrow-right"></label>
+                </div>
+                <!-- carousel slide container 2 -->
+                <div class="carousel-slide">
+                  <label for="pane-15" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>welcome</h1>
+                    <div class="carousel-info"></div>
+                  </div>
+                  <label for="pane-15" class="next fa fa-arrow-right"></label>
                 </div>
               </div>
             </div>
@@ -244,7 +316,7 @@
         <div class="row">
           
           
-          <section class="offset-by-two four columns pie">
+          <section class="offset-by-two four columns pie u-full-width">
             <div class="c100">
               <span>70%</span>
               <div class="slice">
@@ -259,7 +331,7 @@
             </div>
             <h4 class="pie__heading">frontend</h4>
           </section>
-          <section class=" four columns pie">
+          <section class="four columns pie u-max-width">
             <div class="c100">
               <span>30%</span>
               <div class="slice">
@@ -276,7 +348,7 @@
         </div>
         
         
-        <div class="row graphs">
+        <div class="graphs">
           
           
           
@@ -372,6 +444,6 @@
           <small>Copyright All Rights Reserved.</small>
         </div>
       </footer>
-    <script src="js/main.min.js"></script>
+      <script src="js/main.min.js"></script>
     </body>
   </html>
