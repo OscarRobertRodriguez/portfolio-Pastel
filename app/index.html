@@ -8,18 +8,450 @@
     <!--build:css css/main.min.css -->
     <link rel="stylesheet"  href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="css/gallery.css">
+    <link rel="stylesheet" type="text/css" href="css/gallery.theme.css">
     <link rel="stylesheet" href="css/main.css">
     <!--endbuild-->
   </head>
-
   
   <body>
-	  
-	  
-	  	
-  </body>
-
-
-
-
-</html>
+    <input id="hamburger-toggle" type="checkbox" name="checkbox">
+    <nav class="nav">
+      <label for="hamburger-toggle" class="hamburger-icon">
+        <i class="fa fa-bars"></i>
+      </label>
+      <ul class="main-nav" role="navigation">
+        <li><a class="main-nav__link" href="#about">about</a></li>
+        <li><a class="main-nav__link" href="#projects">projects</a></li>
+        <li><a class="main-nav__link" href="#skills">skills</a></li>
+        <li><a class="main-nav__link" href="#contact">contact</a></li>
+        <li><a class="main-nav__link" href="#footer">card</a></li>
+      </ul>
+    </nav>
+    <!-- header -->
+    <header id="header" class=" site-header u-full-width ">
+      <h3 class="author-name">Oscar R.</h3>
+      
+      <div class="container search-main__container">
+        <form class="search-container ">
+          <button>
+          <i class="fa fa-search"></i>
+          </button>
+          <input type="search" placeholder="Search">
+        </form>
+      </div>
+    </header>
+    <!-- /header -->
+    
+    <!-- about -->
+    <section id="about" class="about  u-full-width">
+      <div class="container">
+        <div class="row">
+          <div class="about-person__container">
+            <h2 class="about__name">Oscar Rodriguez</h2>
+            <p class="about__job">Frontend Developer</p>
+          </div>
+          <div>
+            <h1 class="about__intro">I develop websites</h1>
+            <ul class="about-skills">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+        </div>
+        <div class="rows">
+          <div class="twelve columns">
+            <img src="images/alien_me.svg" class="alien">
+          </div>
+        </div>
+      </section>
+      <!-- quote section -->
+      <section id="quote" class="quote u-full-width">
+        <div class="container">
+          <div class="row">
+            
+            <q class="quote__text">The only true wisdom is in knowing you know nothing</q>
+            
+            <h5 class="quote-author">Socrates</h5>
+          </div>
+        </div>
+      </section>
+      <section class="u-full-width u-max-width  projects-heading__container">
+        <h2 class="project-heading">Projects</h2>
+      </section>
+      <!-- Questionable layout choice project section  -->
+      <section  id="projects" class="projects u-full-width">
+        <div class=" tab-carousel__container">
+          <!--radio buttons linked with labels -->
+          <input type="radio" class="vertical-tab__radio" id="tab-radio1" name="group-1">
+          <input type="radio" class="vertical-tab__radio" id="tab-radio2" name="group-1">
+          <input type="radio" class="vertical-tab__radio" id="tab-radio3" name="group-1">
+          <input type="radio" class="vertical-tab__radio" id="tab-radio4" name="group-1">
+          <input type="radio" class="vertical-tab__radio" id="tab-radio5" name="group-1">
+          <input type="radio" class="vertical-tab__radio" id="tab-radio6" name="group-1">
+          <input type="radio" class="vertical-tab__radio" id="tab-radio7" name="group-1">
+          <input type="radio" class="vertical-tab__radio" id="tab-radio8" name="group-1">
+          <!-- label container -->
+          <div class="vertical-tab__tabs">
+            <label class="vertical-tab__label" for="tab-radio1">Forms</label>
+            <label class="vertical-tab__label" for="tab-radio2">Calculator</label>
+            <label class="vertical-tab__label" for="tab-radio3">Buttons</label>
+            <label class="vertical-tab__label" for="tab-radio4">Business Card</label>
+            <label class="vertical-tab__label" for="tab-radio5">Shopping Cart</label>
+            <label class="vertical-tab__label" for="tab-radio6">Accordion</label>
+            <label class="vertical-tab__label" for="tab-radio7">UI Framework</label>
+            <label class="vertical-tab__label" for="tab-radio8">Image Gallery</label>
+          </div>
+          <div class="vertical-tab__content">
+            <!-- forms content -->
+            <div class="vertical-tab__content-project">
+              <div class="carousel carousel-1">
+                <!-- hidden radio buttons used for controls -->
+                <input type="radio" class="carousel-radio" name="carousel-radio__1" id="pane-1" checked />
+                <input type="radio" class="carousel-radio" name="carousel-radio__1" id="pane-2" />
+                <!-- carousel slide container 1 -->
+                <div class="carousel-slide">
+                  <label for="pane-2" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>hello</h1>
+                  </div>
+                  <label for="pane-2" class="next fa fa-arrow-right"></label>
+                </div>
+                <!-- carousel slide container 2 -->
+                <div class="carousel-slide">
+                  <label for="pane-1" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>welcome</h1>
+                    <div class="carousel-info">hello</div>
+                  </div>
+                  <label for="pane-1" class="next fa fa-arrow-right"></label>
+                </div>
+              </div>
+            </div>
+            <!-- calculator content -->
+            <div class="vertical-tab__content-project">
+              <div class="carousel carousel-2">
+                <!-- hidden radio buttons used for controls -->
+                <input type="radio" class="carousel-radio" name="carousel-radio__2" id="pane-3" checked />
+                <input type="radio" class="carousel-radio" name="carousel-radio__2" id="pane-4" />
+                <!-- carousel slide container 1 -->
+                <div class="carousel-slide">
+                  <label for="pane-4" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>hello</h1>
+                  </div>
+                  <label for="pane-4" class="next fa fa-arrow-right"></label>
+                </div>
+                <!-- carousel slide container 2 -->
+                <div class="carousel-slide">
+                  <label for="pane-3" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>welcome</h1>
+                    <div class="carousel-info"></div>
+                  </div>
+                  <label for="pane-3" class="next fa fa-arrow-right"></label>
+                </div>
+              </div>
+            </div>
+            <!-- buttons content -->
+            <div class="vertical-tab__content-project">
+              <div class="carousel carousel-3">
+                <!-- hidden radio buttons used for controls -->
+                <input type="radio" class="carousel-radio" name="carousel-radio__3" id="pane-5" checked />
+                <input type="radio" class="carousel-radio" name="carousel-radio__3" id="pane-6" />
+                <!-- carousel slide container 1 -->
+                <div class="carousel-slide">
+                  <label for="pane-6" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>hello</h1>
+                  </div>
+                  <label for="pane-6" class="next fa fa-arrow-right"></label>
+                </div>
+                <!-- carousel slide container 2 -->
+                <div class="carousel-slide">
+                  <label for="pane-5" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>welcome</h1>
+                    <div class="carousel-info"></div>
+                  </div>
+                  <label for="pane-5" class="next fa fa-arrow-right"></label>
+                </div>
+              </div>
+            </div>
+            <!-- business card content -->
+            <div class="vertical-tab__content-project">
+              <div class="carousel carousel-4">
+                <!-- hidden radio buttons used for controls -->
+                <input type="radio" class="carousel-radio" name="carousel-radio__4" id="pane-7" checked />
+                <input type="radio" class="carousel-radio" name="carousel-radio__4" id="pane-8" />
+                <!-- carousel slide container 1 -->
+                <div class="carousel-slide">
+                  <label for="pane-8" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>hello</h1>
+                  </div>
+                  <label for="pane-8" class="next fa fa-arrow-right"></label>
+                </div>
+                <!-- carousel slide container 2 -->
+                <div class="carousel-slide">
+                  <label for="pane-7" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>welcome</h1>
+                    <div class="carousel-info"></div>
+                  </div>
+                  <label for="pane-7" class="next fa fa-arrow-right"></label>
+                </div>
+              </div>
+            </div>
+            <!-- shopping cart content -->
+            <div class="vertical-tab__content-project">
+              <div class="carousel carousel-5">
+                <!-- hidden radio buttons used for controls -->
+                <input type="radio" class="carousel-radio" name="carousel-radio__5" id="pane-9" checked />
+                <input type="radio" class="carousel-radio" name="carousel-radio__5" id="pane-10" />
+                <!-- carousel slide container 1 -->
+                <div class="carousel-slide">
+                  <label for="pane-10" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>hello</h1>
+                  </div>
+                  <label for="pane-10" class="next fa fa-arrow-right"></label>
+                </div>
+                <!-- carousel slide container 2 -->
+                <div class="carousel-slide">
+                  <label for="pane-9" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>welcome</h1>
+                    
+                  </div>
+                  <label for="pane-9" class="next fa fa-arrow-right"></label>
+                </div>
+              </div>
+            </div>
+            <!-- accordion content -->
+            <div class="vertical-tab__content-project">
+              <div class="carousel carousel-6">
+                <!-- hidden radio buttons used for controls -->
+                <input type="radio" class="carousel-radio" name="carousel-radio__6" id="pane-11" checked />
+                <input type="radio" class="carousel-radio" name="carousel-radio__6" id="pane-12" />
+                <!-- carousel slide container 1 -->
+                <div class="carousel-slide">
+                  <label for="pane-12" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>hello</h1>
+                  </div>
+                  <label for="pane-12" class="next fa fa-arrow-right"></label>
+                </div>
+                <!-- carousel slide container 2 -->
+                <div class="carousel-slide">
+                  <label for="pane-11" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>welcome</h1>
+                    <div class="carousel-info"></div>
+                  </div>
+                  <label for="pane-11" class="next fa fa-arrow-right"></label>
+                </div>
+              </div>
+            </div>
+            <!-- UI Framework content -->
+            <div class="vertical-tab__content-project">
+              <div class="carousel carousel-1">
+                <!-- hidden radio buttons used for controls -->
+                <input type="radio" class="carousel-radio" name="carousel-radio__7" id="pane-13" checked />
+                <input type="radio" class="carousel-radio" name="carousel-radio__7" id="pane-14" />
+                <!-- carousel slide container 1 -->
+                <div class="carousel-slide">
+                  <label for="pane-14" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>hello</h1>
+                  </div>
+                  <label for="pane-14" class="next fa fa-arrow-right"></label>
+                </div>
+                <!-- carousel slide container 2 -->
+                <div class="carousel-slide">
+                  <label for="pane-13" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>welcome</h1>
+                    <div class="carousel-info"></div>
+                  </div>
+                  <label for="pane-13" class="next fa fa-arrow-right"></label>
+                </div>
+              </div>
+            </div>
+            <!-- Image Gallery content -->
+            <div class="vertical-tab__content-project">
+              <div class="carousel carousel-1">
+                <!-- hidden radio buttons used for controls -->
+                <input type="radio" class="carousel-radio" name="carousel-radio__8" id="pane-15" checked />
+                <input type="radio" class="carousel-radio" name="carousel-radio__8" id="pane-16" />
+                <!-- carousel slide container 1 -->
+                <div class="carousel-slide">
+                  <label for="pane-16" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>hello</h1>
+                  </div>
+                  <label for="pane-16" class="next fa fa-arrow-right"></label>
+                </div>
+                <!-- carousel slide container 2 -->
+                <div class="carousel-slide">
+                  <label for="pane-15" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+                    <h1>welcome</h1>
+                    <div class="carousel-info"></div>
+                  </div>
+                  <label for="pane-15" class="next fa fa-arrow-right"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </section>
+      <!-- skills heading -->
+      <section class="skills-heading u-full-width">
+        
+        <h2 class="skills-title">Skills</h2>
+        
+      </section>
+      <!-- skills main  -->
+      <section class="skills u-full-width">
+        
+        
+        <div class="row">
+          
+          
+          <section class="offset-by-two four columns pie u-full-width">
+            <div class="c100">
+              <span>70%</span>
+              <div class="slice">
+                
+                <div class="mask left">
+                  <div class="fill"></div>
+                </div>
+                <div class="mask right ">
+                  <div class="fill"></div>
+                </div>
+              </div>
+            </div>
+            <h4 class="pie__heading">frontend</h4>
+          </section>
+          <section class="four columns pie u-max-width">
+            <div class="c100">
+              <span>30%</span>
+              <div class="slice">
+                <div class="mask left progress-back">
+                  <div class="fill"></div>
+                </div>
+                <div class="mask right progress-back">
+                  <div class="fill"></div>
+                </div>
+              </div>
+            </div>
+            <h4 class="pie__heading">Backend</h4>
+          </section>
+        </div>
+        
+        
+        <div class="graphs">
+          
+          
+          
+          <div class="graph-container   ">
+            <h3 class="graph-heading">frontend</h3>
+            <div class="graph">
+              <ul class="skill-level">
+                
+                <li class="skill-level__item">expert</li>
+                <li class="skill-level__item">proficient</li>
+                <li class="skill-level__item">competent</li>
+                <li class="skill-level__item">learning</li>
+              </ul>
+              <div class="graph-bars">
+                <div class="graph-bar bar-1-1"></div>
+                <div class="graph-bar bar-1-2"></div>
+                <div class="graph-bar bar-1-3"></div>
+                <div class="graph-bar bar-1-4"></div>
+                <div class="graph-bar bar-1-5"></div>
+              </div>
+            </div>
+            <div class="phantom-container"></div>
+          </div>
+          
+          
+          <div class="graph-container ">
+            <h3 class="graph-heading">backend</h3>
+            <div class=" graph">
+              <ul class="skill-level">
+                
+                <li class="skill-level__item">expert</li>
+                <li class="skill-level__item">proficient</li>
+                <li class="skill-level__item">competent</li>
+                <li class="skill-level__item">learning</li>
+              </ul>
+              <div class="graph-bars">
+                <div class="graph-bar bar-2-1"></div>
+                <div class="graph-bar bar-2-2"></div>
+                <div class="graph-bar bar-2-3"></div>
+                <div class="graph-bar bar-2-4"></div>
+                <div class="graph-bar bar-2-5"></div>
+              </div>
+            </div>
+            <div class="phantom-container"></div>
+          </div>
+          
+          <div class="graph-container  ">
+            <h3 class="graph-heading">Other Skills</h3>
+            <div class=" graph">
+              <ul class="skill-level">
+                
+                <li class="skill-level__item">expert</li>
+                <li class="skill-level__item">proficient</li>
+                <li class="skill-level__item">competent</li>
+                <li class="skill-level__item">learning</li>
+              </ul>
+              <div class="graph-bars">
+                <div class="graph-bar bar-3-1"></div>
+                <div class="graph-bar bar-3-2"></div>
+                <div class="graph-bar bar-3-3"></div>
+                <div class="graph-bar bar-3-4"></div>
+                <div class="graph-bar bar-3-5"></div>
+              </div>
+            </div>
+            <div class="phantom-container"></div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-heading u-full-width">
+        <div class="container">
+          <h2>I'm a click away give or take a few packets.</h2>
+        </div>
+      </section>
+      <section id="contact" class="contact u-full-width">
+        <div class="container">
+          <ul class="social-icons u-full-width">
+            <li class="social__item "><a class="social__link"><i class="fa fa-twitter"></i></a></li>
+            <li class="social__item "><a class="social__link"><i class="fa fa-github"></i></a></li>
+            <li class="social__item "><a class="social__link"><i class="fa fa-facebook"></i></a></li>
+          </ul>
+          <form class="contact-form" action="" method="get" accept-charset="utf-8">
+            <input type="text"  placeholder="Name" class=" offset-by-one ten columns  form__input">
+            <input type="email"  placeholder="Email" class="offset-by-one ten columns  form__input">
+            <textarea  placeholder="Message(and Budget)" class="offset-by-one ten columns  form__input form__textarea" maxlength="500" wrap="hard" required="true" cols="100%"rows="4"> </textarea>
+            <div class="offset-by-one ten columns">
+              <input class="three columns u-pull-right form__button" type="submit" name="" value="Go">
+            </div>
+          </form>
+        </div>
+      </section>
+      <footer id="footer" class="site-footer u-full-width">
+        <div class="container">
+          <small>Copyright All Rights Reserved.</small>
+        </div>
+      </footer>
+      <!--build:js js/main.min.js -->
+      <script src="js/carousel-controls.js" type="text/javascript" ></script>
+      <!--endbuild-->
+    </body>
+  </html>

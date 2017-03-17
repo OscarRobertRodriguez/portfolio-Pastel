@@ -1,0 +1,9 @@
+
+
+
+// mixin that translates any width to ems for better responsiveness on various screen sizes
+@mixin forLargeScreens($width)  {
+  @media (max-width: $width)   {
+    @content
+  }
+}

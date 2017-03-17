@@ -1,0 +1,89 @@
+// nav
+.nav {
+  position: fixed;
+  z-index: 10000;
+  width: 350px;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: transform .25s ease;
+
+  @include forLargeScreens(500px) {
+  width: 250px;
+  }
+}
+
+#hamburger-toggle {
+	display: none;
+}
+
+.hamburger-icon {
+  position: absolute;
+  text-align: center;
+  left: 100%;
+  font-size: 4rem;
+  background: #EE9E83;
+  color: #fff;
+  width: 80px;
+  opacity: .5;
+  &:hover {
+  	opacity: .5;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+  @include forLargeScreens(800px) {
+    top: 15%;
+  }
+}
+
+.main-nav {
+	position: absolute;
+	top: 0;
+	bottom:0;
+	left: 0;
+	right: 0;
+	margin: 0;
+    list-style: none;
+    background: #676C80;
+    text-align: center;
+    transition: left .50s ease-in-out;
+}
+
+.main-nav li {
+	font-size: 2rem;
+	text-transform: uppercase;
+
+  @include forLargeScreens(400px) {
+    font-size: 1.5rem;
+  }
+}
+.main-nav__link {
+	display: block;
+	letter-spacing: 2px;
+	padding: 30px;
+	text-decoration: none;
+	width: 100%;
+	color: #fff;
+	line-height: 2;
+
+	&:hover {
+		background: #fff;
+		opacity: .4;
+	}
+   
+}
+
+
+// toggle main-nav with radio button
+
+#hamburger-toggle:checked ~ label {
+   color: #fff;
+}
+
+#hamburger-toggle:checked ~ .nav {
+	transform: translateX(0);
+}

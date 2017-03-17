@@ -7,15 +7,371 @@
     
     <link rel="stylesheet" href="css/main.min.css">
   </head>
-
   
   <body>
-	  
-	  
-	  	
-  </body>
+    <input id="hamburger-toggle" type="checkbox" name="checkbox">
+    <nav class="nav">
+      <label for="hamburger-toggle" class="hamburger-icon">
+        <i class="fa fa-bars"></i>
+      </label>
+      <ul class="main-nav" role="navigation">
+        <li><a class="main-nav__link" href="#about">about</a></li>
+        <li><a class="main-nav__link" href="#projects">projects</a></li>
+        <li><a class="main-nav__link" href="#skills">skills</a></li>
+        <li><a class="main-nav__link" href="#contact">contact</a></li>
+        <li><a class="main-nav__link" href="#footer">card</a></li>
+      </ul>
+    </nav>
+    <!-- header -->
+    <header id="header" class=" container site-header u-full-width ">
+      
+      
+      <h3 class="author-name six columns">Oscar R.</h3>
+      
+      <form class="search-container six columns">
+        <button>
+        <i class="fa fa-search"></i>
+        </button>
+        <input type="search" placeholder="Search">
+      </form>
+    </header>
+    <!-- /header -->
+    
+    <!-- about -->
+    <section id="about" class="about  u-full-width">
+      <div class="container">
+        <div class="row">
+          <div class="about-person__container">
+            <h2 class="about__name">Oscar Rodriguez</h2>
+            <p class="about__job">Frontend Developer</p>
+          </div>
+          <div>
+            <h1 class="about__intro">I develop websites</h1>
+            <ul class="about-skills">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- quote section -->
+      <section id="quote" class="quote u-full-width">
+        <div class="container">
+          <div class="row">
+            
+            <q class="quote__text">The only true wisdom is in knowing you know nothing</q>
+            
+            <h5 class="quote-author">Socrates</h5>
+          </div>
+        </div>
+      </section>
+      <section class="u-full-width u-max-width  back-forward__container">
+        <div class="container">
+          <div class="row">
+            <h2 class="project-heading">Projects</h2>
+            <a class="offset-by-two square  four columns back-button">
+              <i class="fa fa-arrow-left"></i>
+            </a>
+            <a class="square  four columns  forward-button">
+              <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Questionable layout choice project section  -->
+      <section  id="projects" class="projects u-full-width">
+        
 
+<div class="gallery items-3">
+  <div id="item-1" class="control-operator"></div>
+  <div id="item-2" class="control-operator"></div>
+  <div id="item-3" class="control-operator"></div>
 
+  <figure class="item">
+    <h1>1</h1>
+  </figure>
 
+  <figure class="item">
+    <h1>2</h1>
+  </figure>
 
-</html>
+  <figure class="item">
+    <h1>3</h1>
+  </figure>
+
+  <div class="controls">
+    <a href="#item-1" class="control-button">•</a>
+    <a href="#item-2" class="control-button">•</a>
+    <a href="#item-3" class="control-button">•</a>
+  </div>
+</div>
+
+        
+        <div class="container carousel-main">
+          <input type="radio" id="carousel-1"  value="1" name="group-1">
+          <label class="label-control" for="carousel-1">1</label>
+
+          <input type="radio"  value="2" name="group-1" id="carousel-2">
+           <label class="label-control" for="carousel-2">2</label>
+
+          <input type="radio"  value="3" name="group-1" id="carousel-3">
+           <label class="label-control" for="carousel-3">3</label>
+
+          <input type="radio"  value="4" name="group-1" id="carousel-4">
+           <label class="label-control" for="carousel-4">4</label>
+
+          <input type="radio"  value="5" name="group-1" id="carousel-5">
+           <label class="label-control" for="carousel-5">5</label>
+
+          <input type="radio"  value="6" name="group-1" id="carousel-6">
+           <label class="label-control" for="carousel-6">6</label>
+
+          <input type="radio"  value="7" name="group-1" id="carousel-7">
+           <label class="label-control" for="carousel-7">7</label>
+
+          <input type="radio"  value="8" name="group-1" id="carousel-8">
+           <label class="label-control" for="carousel-8"></label>
+          
+          <div class="carousel-container ">
+            
+            <div class="carousel js-carousel">
+              <div>
+                <div class="carousel-slide">
+                  <h1 class="carousel-slide__heading">Forms</h1>
+                  <img class="offset-by-one ten columns carousel-slide__img" src="images/loginform.png" alt="">
+                  <p class="twelve columns carousel-slide__intro">made with html and css</p>
+                  <div class="carousel-link__wrapper">
+                    <a class="carousel-link offset-by-two  four columns" href="https://github.com/OscarRobertRodriguez/business-card"><i class="fa fa-code"></i></a>
+                    <a class="carousel-link four columns" href="https://github.com/OscarRobertRodriguez/business-card"><i class="fa fa-external-link"></i></a>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <div class="carousel-slide">
+                  <h1 class="carousel-slide__heading">accordion</h1>
+                  <img class="offset-by-one ten columns carousel-slide__img" src="images/accordian.png" alt="">
+                  <p class="twelve columns carousel-slide__intro">made with html and css</p>
+                  <div class="carousel-link__wrapper">
+                    <a class="carousel-link offset-by-two  four columns" href="http://codepen.io/nopity/pen/oBXpXW"><i class="fa fa-code"></i></a>
+                    <a class="carousel-link four columns" href="http://codepen.io/nopity/pen/oBXpXW"><i class="fa fa-external-link"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="carousel-slide">
+                  <h1 class="carousel-slide__heading">Image Gallery</h1>
+                  <img class="offset-by-one ten columns carousel-slide__img" src="images/image gallery.png" alt="">
+                  <p class="twelve columns carousel-slide__intro">made with html and css</p>
+                  <div class="carousel-link__wrapper">
+                    <a class="carousel-link offset-by-two  four columns" href="https://github.com/OscarRobertRodriguez/bov-imageGallery"><i class="fa fa-code"></i></a>
+                    <a class="carousel-link four columns" href="https://oscarrobertrodriguez.github.io/bov-imageGallery/"><i class="fa fa-external-link"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="carousel-slide">
+                  <h1 class="carousel-slide__heading">Shopping Cart</h1>
+                  <img class="offset-by-one ten columns carousel-slide__img" src="images/shoppingcart.png" alt="">
+                  <p class="twelve columns carousel-slide__intro">made with html and css</p>
+                  <div class="carousel-link__wrapper">
+                    <a class="carousel-link offset-by-two  four columns" href="https://github.com/OscarRobertRodriguez/product-listing"><i class="fa fa-code"></i></a>
+                    <a class="carousel-link four columns" href="https://oscarrobertrodriguez.github.io/product-listing/"><i class="fa fa-external-link"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="carousel-slide">
+                  <h1 class="carousel-slide__heading">Calculator</h1>
+                  <img class="offset-by-one ten columns carousel-slide__img" src="images/calculator.png" alt="">
+                  <p class="twelve columns carousel-slide__intro">made with html and css</p>
+                  <div class="carousel-link__wrapper">
+                    <a class="carousel-link offset-by-two  four columns" href="https://github.com/OscarRobertRodriguez/calculator"><i class="fa fa-code"></i></a>
+                    <a class="carousel-link four columns" href="https://oscarrobertrodriguez.github.io/calculator/"><i class="fa fa-external-link"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="carousel-slide">
+                  <h1 class="carousel-slide__heading">Business Card</h1>
+                  <img class="offset-by-one ten columns carousel-slide__img" src="images/loginform.png" alt="">
+                  <p class="twelve columns carousel-slide__intro">made with html and css</p>
+                  <div class="carousel-link__wrapper">
+                    <a class="carousel-link offset-by-two  four columns" href="https://github.com/OscarRobertRodriguez/business-card"><i class="fa fa-code"></i></a>
+                    <a class="carousel-link four columns" href="https://github.com/OscarRobertRodriguez/business-card"><i class="fa fa-external-link"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="carousel-slide">
+                  <h1 class="carousel-slide__heading">UI Framework</h1>
+                  <img class="offset-by-one ten columns carousel-slide__img" src="images/loginform.png" alt="">
+                  <p class="twelve columns carousel-slide__intro">made with html and css</p>
+                  <div class="carousel-link__wrapper">
+                    <a class="carousel-link offset-by-two  four columns" href="https://github.com/OscarRobertRodriguez/business-card"><i class="fa fa-code"></i></a>
+                    <a class="carousel-link four columns" href="https://github.com/OscarRobertRodriguez/business-card"><i class="fa fa-external-link"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="carousel-slide">
+                  <h1 class="carousel-slide__heading">Profile Card</h1>
+                  <img class="offset-by-one ten columns carousel-slide__img" src="images/loginform.png" alt="">
+                  <p class="twelve columns carousel-slide__intro">made with html and css</p>
+                  <div class="carousel-link__wrapper">
+                    <a class="carousel-link offset-by-two  four columns" href="https://github.com/OscarRobertRodriguez/profile-card"><i class="fa fa-code"></i></a>
+                    <a class="carousel-link four columns" href="https://oscarrobertrodriguez.github.io/profile-card/"><i class="fa fa-external-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </section>
+      <!-- skills heading -->
+      <section class="skills-heading u-full-width">
+        
+        <h2 class="skills-title">Skills</h2>
+        
+      </section>
+      <!-- skills main  -->
+      <section class="skills u-full-width">
+        
+        
+        <div class="row">
+          
+          
+          <section class="offset-by-two four columns pie">
+            <div class="c100">
+              <span>70%</span>
+              <div class="slice">
+                
+                <div class="mask left">
+                  <div class="fill"></div>
+                </div>
+                <div class="mask right ">
+                  <div class="fill"></div>
+                </div>
+              </div>
+            </div>
+            <h4 class="pie__heading">frontend</h4>
+          </section>
+          <section class=" four columns pie">
+            <div class="c100">
+              <span>30%</span>
+              <div class="slice">
+                <div class="mask left progress-back">
+                  <div class="fill"></div>
+                </div>
+                <div class="mask right progress-back">
+                  <div class="fill"></div>
+                </div>
+              </div>
+            </div>
+            <h4 class="pie__heading">Backend</h4>
+          </section>
+        </div>
+        
+        
+        <div class="row graphs">
+          
+          
+          
+          <div class="graph-container   ">
+            <h3 class="graph-heading">frontend</h3>
+            <div class="graph">
+              <ul class="skill-level">
+                
+                <li class="skill-level__item">expert</li>
+                <li class="skill-level__item">proficient</li>
+                <li class="skill-level__item">competent</li>
+                <li class="skill-level__item">learning</li>
+              </ul>
+              <div class="graph-bars">
+                <div class="graph-bar bar-1-1"></div>
+                <div class="graph-bar bar-1-2"></div>
+                <div class="graph-bar bar-1-3"></div>
+                <div class="graph-bar bar-1-4"></div>
+                <div class="graph-bar bar-1-5"></div>
+              </div>
+            </div>
+            <div class="phantom-container"></div>
+          </div>
+          
+          
+          <div class="graph-container ">
+            <h3 class="graph-heading">backend</h3>
+            <div class=" graph">
+              <ul class="skill-level">
+                
+                <li class="skill-level__item">expert</li>
+                <li class="skill-level__item">proficient</li>
+                <li class="skill-level__item">competent</li>
+                <li class="skill-level__item">learning</li>
+              </ul>
+              <div class="graph-bars">
+                <div class="graph-bar bar-2-1"></div>
+                <div class="graph-bar bar-2-2"></div>
+                <div class="graph-bar bar-2-3"></div>
+                <div class="graph-bar bar-2-4"></div>
+                <div class="graph-bar bar-2-5"></div>
+              </div>
+            </div>
+            <div class="phantom-container"></div>
+          </div>
+          
+          <div class="graph-container  ">
+            <h3 class="graph-heading">Other Skills</h3>
+            <div class=" graph">
+              <ul class="skill-level">
+                
+                <li class="skill-level__item">expert</li>
+                <li class="skill-level__item">proficient</li>
+                <li class="skill-level__item">competent</li>
+                <li class="skill-level__item">learning</li>
+              </ul>
+              <div class="graph-bars">
+                <div class="graph-bar bar-3-1"></div>
+                <div class="graph-bar bar-3-2"></div>
+                <div class="graph-bar bar-3-3"></div>
+                <div class="graph-bar bar-3-4"></div>
+                <div class="graph-bar bar-3-5"></div>
+              </div>
+            </div>
+            <div class="phantom-container"></div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-heading u-full-width">
+        <div class="container">
+          <h2>I'm a click away give or take a few packets.</h2>
+        </div>
+      </section>
+      <section id="contact" class="contact u-full-width">
+        <div class="container">
+          <ul class="social-icons u-full-width">
+            <li class="social__item "><a class="social__link"><i class="fa fa-twitter"></i></a></li>
+            <li class="social__item "><a class="social__link"><i class="fa fa-github"></i></a></li>
+            <li class="social__item "><a class="social__link"><i class="fa fa-facebook"></i></a></li>
+          </ul>
+          <form class="contact-form" action="" method="get" accept-charset="utf-8">
+            <input type="text"  placeholder="Name" class=" offset-by-one ten columns  form__input">
+            <input type="email"  placeholder="Email" class="offset-by-one ten columns  form__input">
+            <textarea  placeholder="Message(and Budget)" class="offset-by-one ten columns  form__input form__textarea" maxlength="500" wrap="hard" required="true" cols="100%"rows="4"> </textarea>
+            <div class="offset-by-one ten columns">
+              <input class="three columns u-pull-right form__button" type="submit" name="" value="Go">
+            </div>
+          </form>
+        </div>
+      </section>
+      <footer id="footer" class="site-footer u-full-width">
+        <div class="container">
+          <small>Copyright All Rights Reserved.</small>
+        </div>
+      </footer>
+    <script src="js/main.min.js"></script>
+    </body>
+  </html>

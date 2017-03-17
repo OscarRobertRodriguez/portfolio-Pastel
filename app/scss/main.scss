@@ -1,2 +1,67 @@
 
+$fa-font-path: "../../bower_components/font-awesome/fonts";
+@import "../../bower_components/gallery/dist/gallery.theme.css";
+@import "../../bower_components/gallery/dist/gallery.min.css";
+@import "../../bower_components/font-awesome/scss/font-awesome.scss";
+@import "global";
+@import "variables";
+@import "mixins";
+@import "site-navigation";
+@import "header";
+@import "about";
+@import "quote-section";
+@import "projects-heading";
+@import "projects";
+@import "skills-heading";
+@import "carousel2";
+@import "skills";
+@import "contact-heading";
+@import "contact";
+@import "footer";
 
+
+
+
+
+
+@media (max-width: 920px) {
+	.pie.pie {
+		margin: 0;
+		width: 100%;
+	}
+}
+
+@media (max-width: 430px) {
+	.graph-container { 
+       padding: 20px 0;
+       max-width: 90%;
+       margin: 0 auto;
+	}
+
+	.graph-bars {
+		justify-content: space-around;
+	}
+
+	.graph-bar {
+		width: 20px;
+	}
+
+	.skill-level__item {
+		padding: 10px 0;
+	}
+
+	[class*="bar-"]:after {
+		transform: rotate(90deg);
+		left: -15px;
+	}
+
+
+	[class*="bar-3"]:after {
+	 bottom: -40px;	
+     left: 0;
+     width: 10px;
+     display: inline-block;
+
+
+}
+}
