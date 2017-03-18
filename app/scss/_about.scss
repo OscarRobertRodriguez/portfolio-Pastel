@@ -35,9 +35,9 @@
 	padding-bottom: 0;
 	text-transform: uppercase;
 	letter-spacing: 3px;
-	font-weight: 800;
+	font-weight: 700;
 	margin: 0;
-
+    font-family: "Rubik", arial; 
 }
 
 
@@ -55,5 +55,6 @@
 
 .alien {
 	max-width: 500px;
+	max-height: 600px;
 	width: 100%;
 }
