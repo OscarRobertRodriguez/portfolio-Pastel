@@ -1,0 +1,211 @@
+
+
+.accordion {
+    display:flex;
+    border: 1px solid black;
+    width: 95%;
+    height:auto;
+    border-radius: 10px;
+    max-width: 700px;
+    padding: 0 5px;
+    margin: 0 5px;
+}
+
+.accordion ul {
+    padding: 0;
+    margin: 10px auto;
+    width: 99%;
+    list-style:none;
+}
+
+
+.accordion label:hover  {
+    color: #fff;
+    background-color:#C1263F;
+    font-weight:600;
+}
+
+.accordion__label {
+    margin-top: 2px;
+    border:1px solid black;
+    padding:10px;
+    font-size:20px;
+    color:#641C19;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-family: sans-serif;
+    background-color:#DB5A3F;
+    text-transform:uppercase;
+    transition: background-color .5s ease-out ;
+    display: block;
+    position: relative;
+    cursor:pointer;
+}
+
+.accordian input + label {
+    transition: all 1s ease-in-out;
+}
+
+.accordion__content {
+    overflow:hidden;
+    padding: 0 1em;
+    width:inherit;
+    height: 2px;
+    border: inherit;
+    background-color:#fff;
+    transition: all .05s ease, height .2s ease;
+    border:none;
+    font-family: sans-serif;
+}
+
+.accordion__content h3 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    color:#4F1843;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.accordion__content h4 {
+    font-size:17px;
+}
+
+.accordion__content p {
+    color:#303740;
+    margin:2px;
+    font-size:17px;
+}
+
+.accordion__content span {
+    text-decoration:line-through;
+}
+
+[type="radio"] {
+    display:none;
+}
+
+[type="radio"]:checked ~ .accordion__label {
+    color: #fff;
+    background-color:#C1263F;
+    font-weight:600;
+}
+
+[type="radio"]:checked  ~ .accordion__content {
+    height: 200px;
+    border: 1px solid black;
+    border-top: none;
+}
+
+/* media */
+
+
+
+
+
+@media screen and (max-width:360px)  {
+
+ .accordion__label {
+        margin-top: 2px;
+        border:1px solid black;
+        padding:10px;
+        font-size:20px;
+        color:#641C19;
+        letter-spacing: 1px;
+        font-weight: 500;
+        font-family: sans-serif;
+        background-color:lightblue;
+        text-transform:uppercase;
+        transition: background-color .05s ease;
+        display: block;
+        position: relative;
+        cursor:pointer;
+    }
+
+    [type="radio"]:checked ~ .accordion__label {
+        color: #fff;
+        background-color:darkblue;
+        font-weight:600;
+    }
+
+    .accordion__label:hover  {
+        color: #fff;
+        background-color:darkblue;
+        font-weight:600;
+    }
+}
+
+
+
+
+@media screen and (min-width:361px) and (max-width:600px)  {
+    .accordion__label {
+        margin-top: 2px;
+        border:1px solid black;
+        padding:10px;
+        font-size:20px;
+        color:#641C19;
+        letter-spacing: 1px;
+        font-weight: 500;
+        font-family: sans-serif;
+        background-color:lightgreen;
+        text-transform:uppercase;
+        transition: background-color .05s ease ;
+        display: block;
+        position: relative;
+        cursor:pointer;
+    }
+
+    [type="radio"]:checked ~ .accordion__label {
+        color: #fff;
+        background-color:darkgreen;
+        font-weight:600;
+    }
+
+    .accordion__label:hover  {
+        color: #fff;
+        background-color:darkgreen;
+        font-weight:600;
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width:601px) and (max-width:1024px)  {
+    .accordion__label {
+        margin-top: 2px;
+        border:1px solid black;
+        padding:10px;
+        font-size:20px;
+        color:#fff;
+        letter-spacing: 1px;
+        font-weight: 500;
+        font-family: sans-serif;
+        background-color:black;
+        text-transform:uppercase;
+        transition: background-color .05s ease;
+        display: block;
+        position: relative;
+        cursor:pointer;
+    }
+
+    [type="radio"]:checked ~ .accordion__label {
+        color: black;
+        background-color:#fff;
+        font-weight:600;
+    }
+
+    .accordion__label:hover  {
+        color: black;
+        background-color:#fff;
+        font-weight:600;
+    }
+}
+
+
+
+
+
+

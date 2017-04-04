@@ -25,6 +25,7 @@ input[name="group-1"] {
   align-items: center;
   justify-content: space-around;
   padding: 10px;
+
 }
 
 // styling for the tab labels
@@ -51,7 +52,7 @@ input[name="group-1"] {
 }
 
 // scss for loop that keeps labels hover style when radio button is checked
-@for $i from 1 through 8 {
+@for $i from 1 through 9 {
   .vertical-tab__radio:checked:nth-child(#{$i}) ~ .vertical-tab__tabs > .vertical-tab__label:nth-child(#{$i}) {
     border-right: 10px solid #fff;
     border-left: 10px solid #fff;
@@ -74,7 +75,7 @@ input[name="group-1"] {
 .vertical-tab__content-project {
   background: #fff;
   height: 95%;
-  width: 90%;
+  width: 95%;
   margin: auto;
   position: absolute;
   top: 0;
@@ -86,8 +87,8 @@ input[name="group-1"] {
 }
 
 // scss for loop to bring .vertical-tab__content-project above other containers 
-@for $i from 1 through 8 {
-  .vertical-tab__radio:checked:nth-child(#{$i}) ~ .vertical-tab__content > .vertical-tab__content-project:nth-child(#{$i}) {
+@for $i from 1 through 9 {
+  .vertical-tab__radio:checked:nth-child(#{$i}) ~ .vertical-tab__content > .vertical-tab__content-project:nth-of-type(#{$i}) {
     opacity: 1;
   }
 }
@@ -128,6 +129,7 @@ input[name="group-1"] {
 .next.next {
   position: absolute;
   bottom:50%;
+  z-index: 1;
   font-size: 4rem;
   color: #7BBDBF;
   text-shadow: 0px 4px 25px rgba(0, 0, 0, .3);
@@ -151,7 +153,7 @@ input[name="group-1"] {
 .slide-content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   flex: 1 0 0;
   align-items: center;
 }
@@ -198,7 +200,7 @@ input[name="group-1"] {
 
 // a for loop within a for loop allows us to target each group of radio buttons for each slide then
 // target those radio buttons within 
-@for $i from 1 through 8 {
+@for $i from 1 through 9 {
   .carousel-#{$i} {
     @for $i from 1 through 2 {
       .carousel-radio:nth-of-type(#{$i}):checked ~ .carousel-slide:nth-of-type(#{$i}) {
@@ -208,6 +210,14 @@ input[name="group-1"] {
       }
     }
   }
+}
+
+
+
+// accordion 
+
+.accordion-tab {
+  display: none;
 }
 
 
@@ -225,9 +235,23 @@ input[name="group-1"] {
 }
 
 @media (max-width:851px) {
+.vertical-tab__tabs {
+  flex: 1 0 150px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  display: none;
+}
+
+
+
   .tab-carousel__container {
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1210px;
+    padding: 0 10px;
   }
   .vertical-tab__label {
     width: 100%;
@@ -242,6 +266,74 @@ input[name="group-1"] {
       background: #7BBDBF;
     }
   }
+
+  .previous.previous, .next.next {
+     bottom: 1%;
+  }
+
+.vertical-tab__content-project {
+  max-height: 0;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  
+  transition: max-height .25s ease-in;
+  
+}
+
+
+@for $i from 1 through 9 {
+  .vertical-tab__radio:checked:nth-child(#{$i}) ~ .vertical-tab__content > .vertical-tab__content-project:nth-of-type(#{$i}) {
+    max-height: 60rem;
+  }
+}
+
+@for $i from 1 through 8 {
+
+.vertical-tab__radio:checked:nth-child(#{$i})~.vertical-tab__content>.accordion-tab:nth-of-type(#{$i}) {
+      border-right: 10px solid #fff;
+      border-left: 10px solid #fff;
+      background: #7BBDBF;
+}
+
+}
+
+
+.vertical-tab__content {
+  
+  background: #7ECDB8;
+  border-radius: 5px;
+  border: 5px solid #fff;
+  flex: 4 0 0;
+  min-height: 600px;
+  box-shadow: -5px 5px 20px rgba(0, 0, 0, .2);
+}
+
+
+.accordion-tab {
+   text-align: center;
+  padding: 15px 10px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  box-shadow: 1px 5px 3px rgba(0, 0, 0, .2);
+  border: 3px solid #fff;
+  display: block;
+  background: #7ECDB8;
+  margin: 3px auto;
+  width: 95%;
+  cursor: pointer;
+  transition: border 150ms ease, background 100ms ease-in;
+  &:hover {
+    border-right: 15px solid #fff;
+    border-left: 15px solid #fff;
+    background: #7BBDBF;
+  }
+}
+
+
+
 }
 
 
