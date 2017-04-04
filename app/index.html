@@ -90,6 +90,7 @@
           <input type="radio" class="vertical-tab__radio" id="tab-radio6" name="group-1">
           <input type="radio" class="vertical-tab__radio" id="tab-radio7" name="group-1">
           <input type="radio" class="vertical-tab__radio" id="tab-radio8" name="group-1">
+          <input type="radio" class="vertical-tab__radio" id="tab-radio9" name="group-1">
           <!-- label container -->
           <div class="vertical-tab__tabs">
             <label class="vertical-tab__label" for="tab-radio1">Forms</label>
@@ -100,9 +101,16 @@
             <label class="vertical-tab__label" for="tab-radio6">Accordion</label>
             <label class="vertical-tab__label" for="tab-radio7">UI Framework</label>
             <label class="vertical-tab__label" for="tab-radio8">Image Gallery</label>
+            <label class="vertical-tab__label" for="tab-radio9">Innovative UI Carousel</label>
           </div>
+
+
           <div class="vertical-tab__content">
-            <!-- forms content -->
+
+
+
+<label class="accordion-tab" for="tab-radio1">Forms</label>            
+<!-- forms content -->
             <div class="vertical-tab__content-project">
               <div class="carousel carousel-1">
                 <!-- hidden radio buttons used for controls -->
@@ -134,6 +142,8 @@
                 </div>
               </div>
             </div>
+
+<label class="accordion-tab" for="tab-radio2">Calculator</label>
             <!-- calculator content -->
             <div class="vertical-tab__content-project">
               <div class="carousel carousel-2">
@@ -159,13 +169,73 @@
                 <!-- carousel slide container 2 -->
                 <div class="carousel-slide">
                   <label for="pane-3" class="previous fa fa-arrow-left"></label>
-                  <div class="slide-content twelve columns">
-                    <img class="carousel-img" src="images/calculator.png" alt="">
+                  <div class="slide-content container">
+
+
+
+<div class="calculator">
+
+  <div class="screen">
+    <div class="screen-input">
+      <p>Javascript coming soon</p>
+    </div>
+  <div class="screen-bottom">
+    <div class="delete-arrow">X</div>
+    <div class="history">History</div>
+  </div>
+  </div>
+
+  <div class="cal-keys">
+    <div class="keys">
+      <div class="key key--task">c</div>
+      <div class="key key--task">()</div>
+      <div class="key key--task">%</div>
+      <div class="key key--task">&divide;</div>
+    </div>
+    <div class="keys">
+      <div class="key">7</div>
+      <div class="key">8</div>
+      <div class="key">9</div>
+      <div class="key key--task">x</div>
+    </div>
+    <div class="keys">
+      <div class="key">4</div>
+      <div class="key">5</div>
+      <div class="key">6</div>
+      <div class="key key--task">-</div>
+    </div>
+    <div class="keys">
+      <div class="key">1</div>
+      <div class="key">2</div>
+      <div class="key">3</div>
+      <div class="key key--task">+</div>
+    </div>
+      <div class="keys">
+      <div class="key">.</div>
+      <div class="key">0</div>
+      <div class="key">+ / -</div>
+      <div class="key key__equal">=</div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
                   </div>
                   <label for="pane-3" class="next fa fa-arrow-right"></label>
                 </div>
               </div>
             </div>
+
+
+<label class="accordion-tab" for="tab-radio3">Buttons</label>
             <!-- buttons content -->
             <div class="vertical-tab__content-project">
               <div class="carousel carousel-3">
@@ -192,12 +262,42 @@
                 <div class="carousel-slide">
                   <label for="pane-5" class="previous fa fa-arrow-left"></label>
                   <div class="slide-content">
-                    <img class="carousel-img" src="images/btns.png" alt="">
+                    
+
+
+      <ul class="container">
+        <li class="btn-container">
+          <button type="button">I'm a plain btn</button>
+        </li>
+
+        <li class="btn-container">
+          <button class="btn">I'm a btn with class</button>
+        </li>
+
+        <li class="btn-container">
+          <a class="btn">I'm a link btn</a>
+        </li>
+
+        <li class="btn-container">
+          <a class="btn  btn--small">small</a>
+          <a class="btn btn--medium">medium</a>
+          <a class="btn btn--large">large</a>
+        </li>
+        
+      </ul>
+
+
+
+
                   </div>
                   <label for="pane-5" class="next fa fa-arrow-right"></label>
                 </div>
               </div>
             </div>
+
+
+
+<label class="accordion-tab" for="tab-radio4">Business Card</label>
             <!-- business card content -->
             <div class="vertical-tab__content-project">
               <div class="carousel carousel-4">
@@ -230,6 +330,10 @@
                 </div>
               </div>
             </div>
+
+
+
+<label class="accordion-tab" for="tab-radio5">Shopping Cart</label>
             <!-- shopping cart content -->
             <div class="vertical-tab__content-project">
               <div class="carousel carousel-5">
@@ -262,6 +366,9 @@
                 </div>
               </div>
             </div>
+
+
+<label class="accordion-tab" for="tab-radio6">Accordion</label>
             <!-- accordion content -->
             <div class="vertical-tab__content-project">
               <div class="carousel carousel-6">
@@ -288,12 +395,81 @@
                 <div class="carousel-slide">
                   <label for="pane-11" class="previous fa fa-arrow-left"></label>
                   <div class="slide-content">
-                   <img class="carousel-img" src="images/accordian.png" alt="">
+
+ 
+
+
+
+<div class="accordion">
+  <ul>
+
+    <!-- Item 1 -->
+    <li>
+      <input id="appetizers" type="radio" name="menu"/>
+      <label class="accordion__label" for="appetizers">appetizers</label>
+      <div class="accordion__content">
+        <h3>Check our tasty apps!</h3>
+        <h4>Happy hour menu - half off!!</h4>
+        <p>Chicken Wings(6) - 5.99$</p>
+        <p>Calamari - 7.99$</p>
+        <p>Garlic breaded pickles - 4.59$</p>
+      </div>
+    </li>
+
+    <!-- Item 2 -->
+    <li>
+      <input id="entrees" type="radio" name="menu"/>
+      <label class="accordion__label" for="entrees">entrees</label>
+      <div class="accordion__content">
+        <h3>Check our tasty apps!</h3>
+        <h4>Happy hour menu - half off!!</h4>
+        <p>Chicken Wings(6) - 5.99$</p>
+        <p>Calamari - 7.99$</p>
+        <p>Garlic breaded pickles - 4.59$</p>
+      </div>
+    </li>
+
+    <!-- Item 3 -->
+    <li>
+      <input id="desserts" type="radio" name="menu"/>
+      <label class="accordion__label" for="desserts">desserts</label>
+      <div class="accordion__content">
+        <h3>Check our tasty apps!</h3>
+        <h4>Happy hour menu - half off!!</h4>
+        <p>Chicken Wings(6) - 5.99$</p>
+        <p>Calamari - 7.99$</p>
+        <p>Garlic breaded pickles - 4.59$</p>
+      </div>
+    </li>
+
+    <!-- Placeholder for Item 4 -->
+      <!-- Item 2 -->
+    <li>
+      <input id="soupsAndSalads" type="radio" name="menu"/>
+      <label class="accordion__label" for="soupsAndSalads">soups and salads</label>
+      <div class="accordion__content">
+        <h3>Salad Mania</h3>
+        <h4>Free salad all day</h4>
+        <p>Octopus Salad - <span>10.00$</span> free</p>
+        <p>Pasta Salad - <span>4.59$</span> free</p>
+      </div>
+    </li>
+
+  </ul>
+</div>
+
+
+
+
                   </div>
                   <label for="pane-11" class="next fa fa-arrow-right"></label>
                 </div>
               </div>
             </div>
+
+
+
+<label class="accordion-tab" for="tab-radio7">UI Framework</label>
             <!-- UI Framework content -->
             <div class="vertical-tab__content-project">
               <div class="carousel carousel-1">
@@ -326,6 +502,10 @@
                 </div>
               </div>
             </div>
+
+
+
+<label class="accordion-tab" for="tab-radio8">Image Gallery</label>
             <!-- Image Gallery content -->
             <div class="vertical-tab__content-project">
               <div class="carousel carousel-1">
@@ -358,6 +538,89 @@
                 </div>
               </div>
             </div>
+
+
+
+<label class="accordion-tab" for="tab-radio9">Innovative Carousel</label>
+<!-- UI Componet Project -->
+
+            <div class="vertical-tab__content-project">
+              <div class="carousel carousel-1">
+                <!-- hidden radio buttons used for controls -->
+                <input type="radio" class="carousel-radio" name="carousel-radio__9" id="pane-17" checked />
+                <input type="radio" class="carousel-radio" name="carousel-radio__9" id="pane-18" />
+                <!-- carousel slide container 1 -->
+                <div class="carousel-slide">
+                  <label for="pane-18" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content">
+                    <h1 class="carousel-heading">Innovative Carousel</h1>
+                    <div class="carousel-info">
+                      <p>made with html and css only</p>
+                      <ul class="carousel-links">
+                        <li class="carousel-links__item"><a href="https://github.com/OscarRobertRodriguez/carousel-dropping-circle"><i class="fa fa-github"></i> Source</a></li>
+                        <li class="carousel-links__item"><a href="https://oscarrobertrodriguez.github.io/carousel-dropping-circle/"><i class="fa fa-external-link"></i> Demo</a></li>
+                      </ul>
+                      
+                    </div>
+                  </div>
+                  <label for="pane-18" class="next fa fa-arrow-right"></label>
+                </div>
+                <!-- carousel slide container 2 -->
+                <div class="carousel-slide">
+                  <label for="pane-17" class="previous fa fa-arrow-left"></label>
+                  <div class="slide-content twelve columns">
+               <div class="container">
+                 
+                  <div class="carousel-drop  twelve columns">
+                    <input type="radio" class="drop-radio" id="drop-1" name="drop-1"  />
+                    <input type="radio" class="drop-radio" id="drop-2" name="drop-1"  />
+                    <input type="radio" class="drop-radio" id="drop-3" name="drop-1"  />
+                    <input type="radio" class="drop-radio" id="drop-4" name="drop-1"  />
+                    <input type="radio" class="drop-radio" id="drop-5" name="drop-1" checked="checked" />
+                    
+                    <div class="label-container">
+                        <label class="drop-label" for="drop-1"></label>
+                        <label class="drop-label" for="drop-2"></label>
+                        <label class="drop-label" for="drop-3"></label>
+                        <label class="drop-label" for="drop-4"></label>
+                        <label class="drop-label" for="drop-5"></label>
+                    </div>
+                    
+                    <div class="carousel-drop__content">
+                        
+                        <div class="slide slide-1">
+                            <img src="images/boat.jpg" alt="boat" />
+                        </div>
+                        
+                        <div class="slide slide-2">
+                            <img src="images/color-houses.jpg" alt="sky" />
+                        </div>
+                        
+                        <div class="slide slide-3">
+                            <img src="images/other-world.jpg" alt="moutains" />
+                        </div>
+                        
+                        <div class="slide slide-4">
+                            <img src="images/sand-castle.jpg" alt="castle" />
+                        </div>
+                        
+                        <div class="slide slide-5">
+                            <img src="images/sun-set.jpg" alt="sun" />
+                        </div>
+
+                    </div>
+                    
+                </div>
+</div>  
+                  </div>
+                  <label for="pane-17" class="next fa fa-arrow-right"></label>
+                </div>
+              </div>
+            </div>
+
+
+
+
           </div>
         </div>
         
